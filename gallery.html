@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gallery</title>
+        <!--Responsive gallery CSS-->
+        <link rel="stylesheet" type="text/css" href="gallery.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <!-- My  swiper CSS -->
+        <link rel="stylesheet" href="swiper.css">
+    </head>
+    <body>
+      <!-- Responsive gallery -->
+      <div class="container">
+        <div class="box a">
+          <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+        <div class="box b">
+          <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+        <div class="box c">
+          <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+        <div class="box d">
+          <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+        <div class="box e">
+          <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+        <div class="box f">
+          <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+        <div class="box g">
+          <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+        <div class="box h">
+          <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+        <div class="box i">
+          <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+        <div class="box j">
+          <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+      </div>
+      <!--*************************************************************************************-->
+
+      <!--Add any headings here or some small content-->
+
+      <!--************************************************************************************-->
+
+      <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+          <div class="img">
+              <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+          </div>
+          <div class="content">
+              <h3>Content</h3>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+            <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+        <div class="content">
+            <h3>Content</h3>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="img">
+            <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+        <div class="content">
+            <h3>Content</h3>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="img">
+            <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+        <div class="content">
+            <h3>Content</h3>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="img">
+            <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+        <div class="content">
+            <h3>Content</h3>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="img">
+            <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+        <div class="content">
+            <h3>Content</h3>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="img">
+            <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+        <div class="content">
+            <h3>Content</h3>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="img">
+            <img src="https://www.rd.com/wp-content/uploads/2019/11/shutterstock_509582812-e1574100998595.jpg">
+        </div>
+        <div class="content">
+            <h3>Content</h3>
+        </div>
+    </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination">
+    </div>
+  </div>
+</div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 500,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+    </body>
+</html>

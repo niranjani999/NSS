@@ -37,7 +37,7 @@ body{
 .container .box.j{
     grid-column: span 2;
 }
-@media (max-width:991px)
+@media (max-width:1030px)
 {
     .container{
         grid-template: "1fr 1fr 1fr" 250px
@@ -66,37 +66,23 @@ body{
         grid-column: span 1;
     }
 }
-@media (max-width:400px)
+@media (max-width:500px)
 {
     .container{
-        grid-template: "1fr" 100px
-                       "1fr" 100px
-                       "1fr" 100px
-                       "1fr" 100px
-                       "1fr" 100px
-                       "1fr" 100px
-                       "1fr" 100px
-                       "1fr" 100px
-                       "1fr" 100px
-                       "1fr" 100px;
+        grid-template: "1fr 1fr" 200px
+                       "1fr 1fr" 200px
+                       "1fr 1fr" 200px
+                       "1fr 1fr" 200px
+                       "1fr 1fr" 200px
+                       "1fr 1fr" 200px;
     }
-    .container .box.b,
-    .container .box.f,
-    .container .box.h,
-    .container .box.j
-    {
+    .container .box.f,.container .box.j{
         grid-column: span 1;
     }
-    .container .box.a, .container .box.h{
+    .container .box.a,.container .box.h{
         grid-row: span 1;
     }
-    .container .box img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
+    .container .box.h{
+        grid-column: span 2;
     }
 }

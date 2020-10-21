@@ -69,20 +69,22 @@ body{
 @media (max-width:500px)
 {
     .container{
-        grid-template: "1fr 1fr" 200px
-                       "1fr 1fr" 200px
-                       "1fr 1fr" 200px
-                       "1fr 1fr" 200px
-                       "1fr 1fr" 200px
-                       "1fr 1fr" 200px;
+        grid-template: "1fr 1fr 1fr" 150px 
+                       "1fr 1fr 1fr" 150px 
+                       "1fr 1fr 1fr" 150px 
+                       "1fr 1fr 1fr" 150px 110px;
+        height: 950px;
     }
-    .container .box.f,.container .box.j{
+    .container .box.d{
+        grid-column: span 3;
+    }
+    .container .box.b, .container .box.j{
         grid-column: span 1;
     }
-    .container .box.a,.container .box.h{
+    .container .box.a, .container .box.h{
         grid-row: span 1;
     }
-    .container .box.h{
-        grid-column: span 2;
+    .container{
+        grid-gap: 1px;
     }
 }
